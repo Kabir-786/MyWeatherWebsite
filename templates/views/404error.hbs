@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    {{>navbar}}
+
+
+    <!-- HERO SECTION -->
+    <div class="container-fluid main-hero">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-12 col-12 hero-left align-items-center">
+                        <figure class="error-img">
+                            <img src="/img/error.jpg" alt="kabir" class="img-fluid" , title="kabir">
+                        </figure>
+                    
+                        <p>Don't be <span class="span-color"> Spooked </span></p>
+                        <h1>{{errorMsg}}</h1>
+                        <a href="/"><button>Go Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    {{>footer}}
+
+</body>
+
+</html>

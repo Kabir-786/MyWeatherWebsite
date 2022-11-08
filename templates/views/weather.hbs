@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    {{>navbar}}
+
+    <!-- HERO SECTION -->
+    <div class="container-fluid main-hero">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="hero">
+                    <form action="" class="temp">
+                        <input type="text" name="cityname" id="cityName" autocomplete="off" placeholder="Enter your city name">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+
+                <div class="tempInfo">
+                    <div class="top_layer">
+                        <p id="day"></p>
+                        <p id="current_date">03-11-2022</p>
+                    </div>
+
+                    <div class="main_layer">
+                        <p id="city_name_here">Get output here</p>
+                        <div class="middle_layer data_hide ">
+                            <p id="temp"> <span id="temp_value">0</span> <sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa-solid fa-cloud fa"  aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER SECTION -->
+    {{>footer}}
+
+
+
+
+
+</body>
+
+</html>

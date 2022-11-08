@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bg-color: #1e272e;
+  /* --main-color: #5931ea; */
+  /* --main-color: #7087e7; */
+  --main-color: #20c20e;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin: 0;
+}
+
+.main-header {
+  background: var(--bg-color);
+}
+
+.navbar {
+  background: var(--bg-color);
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.navbar li {
+  margin-left: 2rem;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.navbar-toggler-icon {
+  background: #e5e5e5;
+}
+
+.fa-snowflake {
+  transition: all linear;
+  animation: rotate 2s linear infinite;
+  color: var(--main-color);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-left {
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-left p {
+  font-size: 2rem;
+}
+
+.hero-left h1 {
+  font-size: 4rem;
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+}
+
+.hero-left .span-color {
+  color: var(--main-color);
+}
+
+.hero-left button {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  outline: none;
+}
+
+.hero-right {
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-right figure img {
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+  width: 40rem;
+}
+
+.error-img {
+  width: 60rem;
+}
+
+.temp {
+  width: 60%;
+  position: relative;
+  margin: 10rem auto 5rem;
+}
+.temp input[type="text"] {
+  width: 100%;
+  color: white;
+  outline: none;
+  background-color: #1e272e;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.7rem;
+  padding: 2rem 5rem 2rem 2rem;
+}
+
+::placeholder {
+  color: darkgrey;
+}
+
+.temp input[type="submit"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  padding: 0 3rem;
+  background-color: #20c20e;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  transition: all 0.3s;
+}
+
+.temp input[type="submit"]:hover {
+  color: #20c20e;
+  background-color: white;
+}
+
+.tempInfo {
+  width: 50rem;
+  margin: auto;
+  min-height: 20rem;
+  background: #323544;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.top_layer {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.top_layer p {
+  font-size: 1.4rem;
+  margin: 1.5rem auto;
+  font-weight: 500;
+}
+
+.main_layer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_layer #city_name_here {
+  font-size: 2rem;
+  font-weight: 400;
+  color: whitesmoke;
+  padding: 2rem 0;
+}
+
+.main_layer .middle_layer {
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa {
+  font-size: 7rem;
+  font-weight: 800;
+}
+
+.fa {
+  color: #7087e7;
+}
+
+sup {
+  font-size: 6rem;
+  margin-top: -2rem;
+}
+
+.data_hide {
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+footer {
+  background: var(--bg-color);
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+/***** RESPONSIVE  *****/
+@media (max-width: 768px) {
+  .hero-left {
+    height: 35rem;
+    margin: 2rem 0;
+  }
+
+  .hero-right {
+    height: auto;
+    margin-top: 3rem;
+  }
+  .temp {
+    width: 100%;
+  }
+
+  .tempInfo {
+    width: 100%;
+  }
+
+  .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+
+  .main_layer #city_name_here {
+    text-align: center;
+  }
+
+  .hero-right figure img {
+    width: 22rem;
+    margin-top: 2rem;
+  }
+
+  .hero-left h1 {
+    font-size: 3rem;
+  }
+}
